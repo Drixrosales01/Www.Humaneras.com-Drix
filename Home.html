@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human Eras</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            background-color: #ffffff;
+            border: 10px solid #272727;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        body::before {
+            content: "";
+            background-image: url('earth1.jpg');
+            opacity: 0.9;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            z-index: -1;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #272727;
+            padding: 10px 30px;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand {
+            font-size: 24px;
+            font-weight: bold;
+            color: #87CEEB;
+        }
+
+        .menu-items {
+            display: flex;
+            gap: 20px;
+        }
+
+        .menu-items a,
+        .menu-items button {
+            text-decoration: none;
+            color: #ffffff;
+            padding: 5px 10px;
+            border-radius: 4px;
+            position: relative;
+            transition: all 0.3s ease;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+        }
+
+        .menu-items a::before,
+        .menu-items button::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #ffffff;
+            transition: width 0.3s ease;
+        }
+
+        .menu-items a:hover::before,
+        .menu-items button:hover::before {
+            width: 100%;
+        }
+
+        .menu-items a:hover,
+        .menu-items button:hover {
+            color: #87CEEB;
+        }
+
+        .content {
+            flex-grow: 1; /* Expand to fill the remaining space */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-brand">HUMAN ERA</div>
+        <div class="menu-items">
+            <a href="file:///C:/Users/Administrator/Desktop/Home.html">Home</a>
+            <a href="file:///C:/Users/Administrator/Desktop/zPrehistoric-Era.html">Pre-Historic Era</a>
+            <a href="file:///C:/Users/Administrator/Desktop/zAncient-Era2.html">Ancient Era</a>
+            <a href="file:///C:/Users/Administrator/Desktop/industrialera.html">Industrial Era</a>
+            <a href="file:///C:/Users/Administrator/Desktop/Electronic-era.html">Electronic Era</a>
+            <a href="file:///C:/Users/Administrator/Desktop/artifacts.html">Artifacts</a>
+            <a href="file:///C:/Users/darren%20mico/OneDrive/Desktop/~!about!~.html">About</a>
+            <!-- Add the "How to use this web" button -->
+            <button onclick="window.location.href='https://pastebin.com/3rTQmfZQ'">How To Use This Web</button>
+        </div>
+    </nav>
+
+    <div class="content">
+        <!-- Rest of your webpage content goes here... -->
+    </div>
+
+</body>
+
+</html>
